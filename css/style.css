@@ -1,0 +1,81 @@
+body {
+  /* Removes the browser's default white space around the page */
+  margin: 0;
+
+  /* Makes the body at least as tall as the full browser window */
+  min-height: 100vh;
+
+  /* Sets the page background color */
+  background: #3498db;
+
+  /* Font from google fonts with API */
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.pill {
+  /* Lets us place the pill relative to the browser window */
+  position: fixed;
+
+  /* Moves the left edge of the pill to the middle of the screen */
+  left: 50%;
+
+  /* Places the pill 60px above the bottom of the screen */
+  bottom: 40px;
+
+  /* Moves the pill back left by half of its own width, so it is centered */
+  transform: translateX(-50%);
+
+  /* Puts the sub-pills next to each other in a row */
+  display: flex;
+
+  /* Adds space between the sub-pills */
+  gap: 16px;
+
+  /* Adds space inside the pill, around the sub-pills */
+  padding: 5px;
+
+  /* Makes the pill white */
+  background: white;
+
+  /* Makes the pill very round */
+  border-radius: 999px;
+}
+
+.sub-pill {
+  /* removes default browser button styling*/
+  appearance: none;
+
+  width: auto;
+
+  /* Sets the height of each sub-pill */
+  height: 50px;
+
+  /* width is at zero except for the padding around the content = text*/
+  padding: 0 24px;
+
+  /* Adds a black border around each sub-pill */
+  border: 1px solid black;
+
+  /* Makes the sub-pill blue */
+  background: blue;
+
+  /* Makes the sub-pill very round */
+  border-radius: 999px;
+
+  /* Allows us to center the text inside the sub-pill */
+  display: flex;
+
+  /* Centers the text vertically */
+  align-items: center;
+
+  /* Centers the text horizontally */
+  justify-content: center;
+
+  /* Makes the text white */
+  color: white;
+  font-weight: 600;
+
+  cursor: pointer;
+}
